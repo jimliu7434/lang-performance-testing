@@ -23,7 +23,8 @@ GOOS跟GOARCH
 ```bash
 .\build_darwin.bat
 ```
-bat檔中指定了
+bat檔中指定了上述的參數  
+另外會將編譯好的binary copy到archive資料夾中
 ## Deploy
 直接將編譯好之binary置於目標主機上即可執行  
 centOS必須執行以下command 調整權限
