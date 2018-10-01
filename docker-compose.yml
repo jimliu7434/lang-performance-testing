@@ -1,0 +1,11 @@
+version: "2.1"
+services:
+  koa:
+    image: nodekoa-redis-test:1.0.0
+  haproxy:
+    image: haproxy-dev:1.8
+    container_name: haproxy
+    links: 
+      - "koa"
+    ports:
+      - "5001:5001"
